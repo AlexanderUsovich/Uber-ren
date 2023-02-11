@@ -1,0 +1,61 @@
+.conditions
+    padding: 76px 0
+
+    // .conditions__items
+    &__items
+        margin-top: 40px
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        grid-template-rows: auto
+        grid-auto-rows: auto
+        gap: 60px
+
+    // .conditions__item
+    &__item
+        width: 482px
+        &_blue
+            .conditions__list-item::before
+                background: url('../icons/check-blue.png')
+        &_red
+            .conditions__list-item::before
+                background: url('../icons/check-red.png')
+            .conditions__subtitle
+                color: #FF5656
+
+    // .conditions__subtitle
+    &__subtitle
+        font-weight: 400
+        font-size: 22px
+        color: #1CA8C3
+
+    // .conditions__list
+    &__list
+        margin-top: 20px
+        padding-left: 50px
+
+    // .conditions__list-item
+    &__list-item
+        font-weight: 300
+        font-size: 17px
+        line-height: 24px
+        color: #222222
+        margin-top: 10px
+        position: relative
+        &::before
+            content: ""
+            position: absolute
+            top: 2px
+            left: -34px
+            display: block
+            width: 21px
+            height: 20px    
+        
+
+    // .conditions__descr
+    &__descr
+        font-weight: 300
+        font-size: 17px
+        line-height: 1.41
+        color: #1CA8C3
+        margin-top: 25px
+

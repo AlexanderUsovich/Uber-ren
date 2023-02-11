@@ -1,0 +1,56 @@
+.mobile
+    background: url('../img/mobile_bg.jpg')
+    padding: 50px 0 80px
+
+    // .mobile__items
+    &__items
+        margin-top: 30px
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        gap: 20px
+
+    // .mobile__item
+    &__item
+        position: relative
+        padding: 88px 15px 34px
+        width: 320px
+        height: 280px
+        &:nth-child(1)
+            background: url('../img/mobile/card1.jpg')
+        &:nth-child(2)
+            background: url('../img/mobile/card2.jpg')
+        &:nth-child(3)
+            background: url('../img/mobile/card3.jpg')
+        &:nth-child(4)
+            background: url('../img/mobile/card4.jpg')
+        &:nth-child(5)
+            background: url('../img/mobile/card5.jpg')
+        &:nth-child(6)
+            background: url('../img/mobile/card6.jpg')
+            
+
+    // .mobile_subtitle
+    &__subtitle
+        text-align: center
+        font-weight: 400
+        font-size: 24px
+        line-height: 31px
+        color: #fff
+        text-transform: uppercase
+
+    // .mobile__circle
+    &__circle
+        width: 26px
+        height: 26px
+        background: #000
+        border-radius: 50%
+        display: flex
+        justify-content: center
+        align-items: center
+        position: absolute
+        bottom: 34px
+        left: 50%
+        transform: translateX(-50%)
+        cursor: pointer
+
