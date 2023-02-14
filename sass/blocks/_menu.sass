@@ -1,15 +1,19 @@
 .menu
 	background: #212121
+	position: fixed
+	width: 100%
+	z-index: 1
 	&__list
 		display: flex
 		justify-content: space-between
 		padding: 10px 47px
 		font-weight: 300
 		font-size: 15px
-	&__item
+		transition: 1s	
+	&__link
+		display: block
 		line-height: 31px
-	&__item + &__item
 		height: 31px
-		line-height: 31px
+	&__item + &__item
 		border-left: 2px dashed #000
-		padding-left: 37px
+		padding-left: 35px

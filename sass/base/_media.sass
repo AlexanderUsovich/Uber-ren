@@ -1,30 +1,222 @@
 @media (min-width: 1400px)
-    //.col-xxl-
-    .container
-        max-width: 1320px 
+	//.col-xxl-
+	.container
+		max-width: 1320px 
 
 @media (max-width: 1399px)
-    //.col-xl-
-    .container
-        max-width: 1140px 
+	//.col-xl-
+	.container
+		max-width: 1140px 
 
 @media (max-width: 1199px)
-    //.col-lg-
-    .container
-        max-width: 960px 
+	//.col-lg-
+	.container
+		max-width: 960px 
+	.menu
+		&__list
+			font-size: 14px
+		&__item+.menu__item
+			padding-left: 20px
+	.mobile
+		&__items
+			justify-content: center
+	.conditions
+		&__items
+			grid-template-columns: repeat(1,1fr)
+			justify-items: center
+	.footer
+		&__inner
+			grid-template-columns: 1fr
+			grid-template-rows: auto
+			margin-top: 21px
+			justify-items: center
+			gap: 20px
+		&__social
+			order: 1
+		&__links-second
+			gap: 10px
+		&__stores
+			justify-self: center
+			order: 2
 
 @media (max-width: 991px) 
-    //.col-md-
-    .container
-        max-width: 720px
+	//.col-md-
+	.container
+		max-width: 720px
+	.menu
+		height: 30px
+		&__list
+			position: absolute
+			top: 0
+			left: -100%
+			width: 80%
+			height: 100vh
+			background-color: rgba(0, 0, 0, .87)
+			flex-direction: column
+			justify-content: center
+			gap: 5px
+			text-align: center
+			padding: 0 15px
+			&_active
+				left: 0
+		&__link
+			font-size: 22px
+			line-height: 1.2
+			height: auto
+			padding: 15px 0
+		&__item + &__item
+			border-left: none
+			padding-left: 0
+	.hamburger
+		display: block
+	.header-bottom
+		height: 60px
+		top: 30px
+		&__inner
+			height: 60px
+			padding: 0
+		&__img
+			max-width: 200px
+		&__call-text, &__descr
+			display: none
+		&__call-phone
+			font-size: 17px
+	.btn
+		&_header
+			width: 166px
+			height: 36px
+			margin-left: 20px
+	.promo
+		&__header
+			font-size: 49px
+		&__subheader
+			font-size: 30px
+		&__descr
+			font-size: 17px
+	.reasons
+		&__items
+			grid-template-columns: repeat(1,1fr)
+			justify-items: center
+			gap: 20px
+	.title
+		font-size: 30px
+	.choice
+		background-position: left 470px
+	
 
 @media (max-width: 767px) 
-    //.col-sm-
-    .container
-        max-width: 540px
+	//.col-sm-
+	.container
+		max-width: 540px
+	.header-bottom
+		&__call-phone
+			font-size: 11px
+	.btn
+		&_header
+			width: 110px
+			height: 22px
+			font-size: 10px
+	.title
+		font-size: 27px
+	.choice
+		background-position: left 420px
+	.world
+		&__link
+			margin-top: 340px
 
 @media (max-width: 575px) 
-    //.col-
-    .container
-        max-width: 100%
+	//.col-
+	.container
+		max-width: 100%
+	.header-bottom
+		&__img
+			max-width: 130px
+		&__call
+			display: none
+		&__phone-sm
+			display: inline-block
+	.menu
+		&__link
+			padding: 10px 0
+			font-size: 18px
+
+	.promo
+		padding: 130px 0 35px
+		&__header
+			font-size: 30px
+			line-height: 116.666667% // 35/30
+		&__subheader
+			font-size: 20px
+			line-height: 115% // 23px/20
+		&__descr
+			display: none
+	.btn
+		&_promo
+			margin-top: 70px
+	
+	.reasons
+		padding: 20px 0 38px
+		&__items
+			margin-top: 24px
+		&__item
+			flex-direction: column
+			align-items: center
+			gap: 24px
+			padding: 0
+		&__title
+			font-size: 16px
+	.title
+		font-size: 16px
+		margin-top: 16px
+		&__descr
+			font-size: 14px
+	.mobile
+		padding: 25px 0 43px
+		&__items
+			margin-top: 27px
+		&__item
+			height: 254px
+			padding: 80px 12px 20px
+		&__subtitle
+			font-size: 18px
+	.choice
+		padding: 24px 0 31px
+		background-position: left 280px
+	
+	.conditions
+		padding: 24px 0 30px
+		&__items
+			margin-top: 30px
+			gap: 30px
+			justify-items: start
+		&__subtitle
+			font-size: 16px
+		&__list-item
+			font-size: 14px
+			margin-top: 5px
+		&__descr
+			margin-top: 15px
+	.world
+		padding: 26px 0 30px
+		&__link
+			margin-top: 211px
+	.footer
+		padding: 24px 15px 30px
+		&__inner
+			width: 100%
+			gap: 18px
+		&__links
+			width: 100%
+			max-width: 390px
+			&-first
+				font-size: 14px
+				padding: 0
+			&-second
+				padding: 0 20px
+				flex-wrap: wrap
+
+		.divider
+			width: 255px
+
+
  

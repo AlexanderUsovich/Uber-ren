@@ -14,12 +14,13 @@
 	<header class="header">
 		<nav class="menu">
 			<div class="container">
+				<div class="hamburger"><span></span><span></span><span></span></div>
 				<ul class="menu__list">
 					<li class="menu__item"><a href="#" class="menu__link">Главная</a></li>
-					<li class="menu__item"><a href="#" class="menu__link">Со своим автомобилем</a></li>
-					<li class="menu__item"><a href="#" class="menu__link">На автомобиле компании</a></li>
-					<li class="menu__item"><a href="#" class="menu__link">Требования</a></li>
-					<li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
+					<li class="menu__item"><a href="#conditions" class="menu__link">Со своим автомобилем</a></li>
+					<li class="menu__item"><a href="#conditions" class="menu__link">На автомобиле компании</a></li>
+					<li class="menu__item"><a href="#conditions" class="menu__link">Требования</a></li>
+					<li class="menu__item"><a href="#footer" class="menu__link">Контакты</a></li>
 					<li class="menu__item"><a href="#" class="menu__link">Оставить заявку</a></li>                                                                                        
 				</ul>
 			</div>
@@ -35,7 +36,10 @@
 						<div class="header-bottom__call-text">Звоните нам ежедневно</div>
 						<a class="header-bottom__call-phone" href="tel:+375295708614">+375(29)570-86-14</a>
 					</div>
-					<button class="btn btn_header">заказать звонок</button>
+					<div class="header-bottom__phone-btn">
+						<a class="header-bottom__phone-sm" href="tel:+375295708614">+375(29)570-86-14</a>
+						<button class="btn btn_header">заказать звонок</button>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -190,7 +194,7 @@
 			<p class="choice__descr">Машины на каждый день.<br> Лучше, быстрее и дешевле, чем такси</p>
 		</div>
 	</section>
-	<section class="conditions">
+	<section class="conditions" id="conditions">
 		<div class="container">
 			<div class="label">возможности</div>
 			<h2 class="title title_conditions">условия и требования</h2>
@@ -252,7 +256,7 @@
 			<a class="world__link" href="#">посмотреть все города</a>
 		</div>
 	</section>
-	<footer class="footer">
+	<footer class="footer" id="footer">
 		<div class="divider"></div>
 		<div class="footer__inner">
 			<div class="footer__social">
@@ -295,10 +299,10 @@
 				</a>
 			</div>
 			<div class="footer__links">
-				<div class="footer__links-firsrt">
-					<a class="footer__links-firsrt-link" href="#">на главную</a>
-					<a class="footer__links-firsrt-link" href="#">города</a>
-					<a class="footer__links-firsrt-link" href="#">для водителей</a>
+				<div class="footer__links-first">
+					<a class="footer__links-first-link" href="#">на главную</a>
+					<a class="footer__links-first-link" href="#">города</a>
+					<a class="footer__links-first-link" href="#">для водителей</a>
 				</div>
 				<div class="footer__links-second">
 					<a class="footer__links-second-link" href="#">центр поддержки</a>
@@ -318,5 +322,6 @@
 			</div>
 		</div>
 	</footer>
+	<script src="js/script.js"></script>
 </body>
 </html>
