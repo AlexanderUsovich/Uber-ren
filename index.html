@@ -1,12 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Uber</title>
+	<link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="icons/favicon.ico" type="image/x-icon">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/normalize.min.css">
 	<link rel="stylesheet" href="css/main.min.css">
 </head>
@@ -38,7 +41,7 @@
 					</div>
 					<div class="header-bottom__phone-btn">
 						<a class="header-bottom__phone-sm" href="tel:+375295708614">+375(29)570-86-14</a>
-						<button class="btn btn_header">заказать звонок</button>
+						<button class="btn btn_header" data-modal="cons">заказать звонок</button>
 					</div>
 				</div>
 			</div>
@@ -50,7 +53,7 @@
 			<h2 class="promo__subheader">ПРИГЛАШАЕМ ВОДИТЕЛЕЙ! НА СВОЕМ АВТО!</h2>
 			<p class="promo__descr">Компания UBER  динамически развивающаяся. Компания на рынке занимает лидирующее место средитаксомоторных компаний, Компания абсолютно прозрачная вы можете контролировать все процессы у себя в личном кабинете. Бонуcная система.Помимо выполненной работы по заказам, компания начисляет бонусы запиковое время.</p>
 			<p class="promo__descr">Мы одни из партнеров и зарекомендовали себя как одна из лучших команд в городе Москве.  Водители у насзарабатывают от 80000- 120000 в месяц.</p>
-			<button class="btn btn_promo">ОТПРАВИТЬ ЗАЯВКУ!</button>
+			<button class="btn btn_promo" data-modal="cons">ОТПРАВИТЬ ЗАЯВКУ!</button>
 		</div>
 	</section>
 	<section class="reasons">
@@ -190,8 +193,8 @@
 			<div class="label label_white">Возможности</div>
 			<h2 class="title title_choice">Выбор - отличная штука!</h2>
 			<p class="title__descr title__descr_white">Закажите автомобиль, который подходит вам по стилю и бюджету</p>
-			<img class="choice__img" src="img/car.png" alt="car">
-			<p class="choice__descr">Машины на каждый день.<br> Лучше, быстрее и дешевле, чем такси</p>
+			<img class="choice__img animate__animated" src="img/car.png" alt="car">
+			<p class="choice__descr">Машины на каждый день.Zhv1PEuAJWu/!YVC<br> Лучше, быстрее и дешевле, чем такси</p>
 		</div>
 	</section>
 	<section class="conditions" id="conditions">
@@ -322,6 +325,29 @@
 			</div>
 		</div>
 	</footer>
+	<div class="modals">
+		<div class="overlay"></div>
+		<div class="modal" id="cons">
+			<div class="close">&times;</div>
+			<div class="modal__title">Просто заполните форму заявки</div>
+			<div class="modal__subtitle">и мы перезвоним вам в течении 10 минут</div>
+			<form action="#" class="feed-form feed-form_modal">
+				<input class="feed-form__input" name="name" type="text" placeholder="Ваше имя">
+				<input class="feed-form__input" name="phone" placeholder="Ваше телефон">
+				<input class="feed-form__input" name="email" type="email" placeholder="Ваше E-mail">
+				<button class="btn btn_submit">заказать консультацию</button>
+			</form>
+		</div>
+		<div class="modal" id="thanks">
+			<div class="close">&times;</div>
+			<div class="modal__title">Спасибо за вашу заявку!</div>
+			<div class="modal__subtitle">Наш менеджер свяжется с вами<br> в ближайшее время!</div>
+		</div>
+	</div>
+	<a href="#"><svg id="pageup" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM377 271c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-87-87-87 87c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9L239 167c9.4-9.4 24.6-9.4 33.9 0L377 271z" fill="#1EACC7"/></svg></a>
+	<script src="js/jquery-3.6.0.min.js"></script>
+	<script src="js/jquery.validate.min.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
 	<script src="js/script.js"></script>
 </body>
 </html>
